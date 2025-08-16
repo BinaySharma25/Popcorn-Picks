@@ -2,7 +2,6 @@ const searchForm = document.querySelector('form');
 const movieContainer = document.querySelector('.movie-conatiner');
 const inputBox = document.querySelector('.inputBox');
 
-//fetch movie details i=using omdb api
 const getMovieInfo = async (movie) => {
     try{
     const response = await fetch(url);
@@ -97,3 +96,4 @@ darkModeToggle.addEventListener('click', () => {
         document.body.classList.contains('dark-mode') ? '☀️ Light Mode' : '🌙 Dark Mode';
 
 });
+
