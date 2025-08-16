@@ -13,8 +13,9 @@ Features :<br>
 <br>
 🔗 Live Demo : https://popcorn-picks-binay.netlify.app/
 <br>
+<br>
+<b>ScreenShots</b><br>
 
-<b>ScreenShots</b>
 Dark Mode
 <br>
 ![image alt](https://github.com/BinaySharma25/Popcorn-Picks/blob/main/Screenshots/ss-1.png?raw=true)
