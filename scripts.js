@@ -2,12 +2,9 @@ const searchForm = document.querySelector('form');
 const movieContainer = document.querySelector('.movie-conatiner');
 const inputBox = document.querySelector('.inputBox');
 
-//fetch movie details i=using omdb api
+
 const getMovieInfo = async (movie) => {
     try{
-         const myAPIKey = "87ef531";
-    const url = `http://www.omdbapi.com/?apikey=${myAPIKey}&t=${movie}`;
-
     const response = await fetch(url);
 
         if(!response.ok){
@@ -98,4 +95,5 @@ darkModeToggle.addEventListener('click', () => {
     document.querySelector('.movie-conatiner').classList.toggle('dark-mode');
     darkModeToggle.textContent = 
         document.body.classList.contains('dark-mode') ? '☀️ Light Mode' : '🌙 Dark Mode';
+
 });
