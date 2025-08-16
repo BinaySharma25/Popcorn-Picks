@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     font-family: "Montserrat", sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg, #43c6ac, #191654);
+}
+/*Navbar*/
+nav{
+    background: #232f3e;
+    color: #fff;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 18px;
+}
+.search-container input, button{
+    padding: 5px 10px;
+    border: none;
+    font-size: 16px;
+}
+.search-container input{
+    border-radius: 3px 0 0 3px;
+}
+.search-container button{
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    background: #f5c518;
+    transition: all 0.2s;
+}
+.search-container button:hover{
+    background: #ffdd45;
+
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+p img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.logo img{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+/*Min section*/
+main{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-block: 38px;
+}
+main section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 72vh;
+}
+
+.movie-conatiner{
+    display: flex;
+    justify-content: center;
+    background: #fff;
+    box-shadow: 0px 0px 10px #ccc;
+    width: 80%;
+    border-radius: 5px;
+}
+
+
+.movie-poster img{
+    height: 450px;
+    margin-right: 30px;
+    border-radius: 5px 0 0 5px;
+}
+
+.movie-info{
+    padding-inline: 15px;
+}
+.movie-info h2{
+    text-align: center;
+    font-size: 32px;
+    margin: 20px 0 12px 0;
+}
+.movie-info h2+p{
+    text-align: center;
+
+}
+.movie-info .movie-genre{
+    display: flex;
+    justify-content: center;
+    margin-block: 5px;
+    overflow-x: auto;
+}
+
+.movie-info .movie-genre p{
+    background: #232f3e;
+    color: #fff;
+    padding: 5px 14px;
+    margin-inline: 5px;
+    border: 2px solid black;
+    border-radius: 6px;
+    font-weight: 700;
+}
+
+.movie-info p{
+    font-size: 18px;
+    margin-block: 16px;
+    line-height: 24px;
+}
+.movie-conatiner.noBackground{
+    background: none;
+    box-shadow: none;
+    align-items: center;
+}
+
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background: linear-gradient(135deg, #0f2027, #2c5364, #000000);
+    color: #e0e0e0;
+}
+nav.dark-mode,
+footer.dark-mode {
+    background: #111;
+    color: #f5c518;
+}
+.movie-conatiner.dark-mode {
+    background: #232323;
+    box-shadow: 0px 0px 10px #222;
+}
+.movie-info .movie-genre p.dark-mode {
+    background: #444;
+    color: #f5c518;
+    border-color: #f5c518;
+}
+.dark-mode-btn {
+    background: #232f3e;
+    color: #f5c518;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-left: 16px;
+    font-size: 16px;
+    transition: background 0.2s;
+}
+.dark-mode-btn:hover {
+    background: #444;
+}
+.movie-conatiner.noBackground.dark-mode{
+    background: none;
+    box-shadow: none;
+    align-items: center;
+}
+
+
+/*footer*/
+
+footer{
+    text-align: center;
+    background: #232f3e;
+    color: #fff;
+    padding-block: 20px;
+    margin-top: 40px;
+    font-size: 20px;
+}
+footer p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    gap: 5px;
+}
+
+/*Responsive Code*/
+@media screen and (max-width:950px){
+    .movie-conatiner{
+        flex-direction: column;
+    }
+    .movie-poster img{
+        width: 100%;
+        height: fit-content;
+        margin-right: 0;
+    }
+    .movie-info{
+        padding-inline: 30px;
+    }
+}
+
+@media screen and (max-width:630px) {
+    .navbar{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .search-container{
+        margin-top: 12px;
+    }
+}
+@media screen and (max-width:450px) {
+    .movie-info h2{
+        font-size: 24px;
+    }
+    .movie-info p{
+        font-size: 16px;
+    }
+    .movie-info .movie-genre p{
+        font-size: 14px;
+        padding: 4px 10px;
+    }
+}
