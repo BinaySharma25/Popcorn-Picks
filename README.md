@@ -10,6 +10,10 @@ Features :<br>
 → Minimal yet engaging design.<br>
 → Responsive design.<br>
 
+<br>
+🔗 Live Demo : https://popcorn-picks-binay.netlify.app/
+<br>
+
 <b>ScreenShots</b>
 Dark Mode
 <br>
